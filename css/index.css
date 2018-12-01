@@ -1,0 +1,111 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.wrap {
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	min-height: 900px;
+	display: flex;
+}
+
+.header__left-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background: #000;
+	width: 461px;
+}
+
+.left-block__logo {
+	background: antiquewhite;
+	height: 37px;
+	width: 98px;
+	margin-top: 36px;
+	margin-left: 52px;
+}
+
+.left-block__dropdown {
+	display: flex;
+	background: darksalmon;
+	align-self: flex-end;
+}
+
+.dropdown__item {
+	color: #fff;
+
+}
+
+.left-block__social {
+	background: hotpink;
+	align-self: flex-start;
+}
+
+.social__link{
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 0;
+	margin-right: 12px;
+	vertical-align: top;
+	text-decoration: none;
+	position: relative;
+}
+
+.social__link:last-child {
+	margin-right: 0;
+}
+
+.link__insta {
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+
+.link__vk {
+	position: absolute;
+	top: 16px;
+	left: 11px;
+}
+
+.link__fb {
+	position: absolute;
+	top: 13px;
+	left: 17px;
+}
+
+
+
+
+
+.image__item {
+	position: absolute;
+	bottom: -1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header__right-block {
+	display: flex;
+	flex-direction: row;
+	background: #fff;
+	width: 939px;
+}
