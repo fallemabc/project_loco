@@ -242,8 +242,7 @@ button.scroll__button:before {
 @media only screen and (max-width: 768px) {
 	.wrap {
 		max-width: 375px;
-		margin: 0 auto;
-		
+		margin: 0;
 	}
 	
 	.header {
@@ -295,7 +294,7 @@ button.scroll__button:before {
 		cursor: pointer;
 		height: 69px;
 		width: 70px;
-		position: absolute;
+		float: right;
 		right: 0;
 		top: 0;
 	}
