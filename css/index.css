@@ -243,10 +243,12 @@ button.scroll__button:before {
 	.wrap {
 		max-width: 375px;
 		margin: 0;
+		overflow: hidden;
 	}
 	
 	.header {
-		min-height: 597px;
+		max-height: 597px;
+		max-width: 376px;
 		position: relative;
 	}
 	
@@ -294,9 +296,9 @@ button.scroll__button:before {
 		cursor: pointer;
 		height: 69px;
 		width: 70px;
-		float: right;
-		right: 0;
+		position: absolute;
 		top: 0;
+		right: 0;
 	}
 	
 	.right-block__menu span {
