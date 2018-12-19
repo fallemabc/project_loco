@@ -15,6 +15,8 @@ body {
 	margin: 0 auto;
 }
 
+/*первый этаж*/
+
 .header {
 	min-height: 900px;
 	position: relative;
@@ -186,6 +188,10 @@ body {
 	text-transform: uppercase;
 }
 
+.section__button:focus {
+	outline: none;
+}
+
 .section__offers {
 	float: left;
 	margin-top: 13px;
@@ -239,7 +245,9 @@ button.scroll__button:before {
 	background-color: #000;
 	border-radius: 19px;
 }
-/*
+
+/*второй этаж*/
+
 .main {
 	background: #fae8e4;
 	min-height: 900px;
@@ -258,7 +266,7 @@ button.scroll__button:before {
 
 .main__section-card {
 	background: #fff;
-	box-shadow: 60px 90px 100px -60px rgba(0,0,0,0.2);
+	box-shadow: 60px 90px 100px -60px rgba(0, 0, 0, 0.2);
 	height: 556px;
 	width: 488px;
 	position: absolute;
@@ -343,40 +351,8 @@ button.scroll__button:before {
 	margin-bottom: 46px;
 }
 
-.buy__amount {
-	margin-right: 15px;
-	font-weight: 500;
-	line-height: 0;
-	font-size: 15px;
-	float: left;
-}
-
-.amount__minus {
-	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-	border-left: 2px solid #000;
-	display: inline-block;
-	padding: 21px 5px 19px 18px;
-}
-
-.amount__count {
-	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-	border-right: none;
-	border-left: none;
-	display: inline-block;
-	padding: 21px 5px 19px 12px;
-}
-
-.amount__plus {
-	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-	border-right: 2px solid #000;
-	display: inline-block;
-	padding: 21px 15px 20px 12px;
-}
-
 .buy__button {
+	display: inline-block;
 	float: left;
 	letter-spacing: 0;
 	padding: 13px 48px 13px 38px;
@@ -386,6 +362,46 @@ button.scroll__button:before {
 .buy__button a {
 	color: #000;
 	text-decoration: none;
+}
+
+.section-card__buy {
+	border: 2px solid #000;
+	float: left;
+	margin-right: 15px;
+	min-width: 96px;
+}
+
+.buy__amount {
+	background: #fff;
+	border: none;
+	height: 40px;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.buy__amount.minus {
+	padding-left: 16px;
+}
+
+.section-card__buy:focus {
+	outline: none;
+}
+
+.section-card__buy input {
+	display: inline-block;
+	max-width: 20px;
+	padding-top: 11px;
+	padding-left: 12px;
+	background: #fff;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 0;
+	margin: 0;
 }
 
 .main__offers {
@@ -398,16 +414,119 @@ button.scroll__button:before {
 }
 
 .main__offers .offers__link::after {
-	background: url(../img/arrow2.png) no-repeat;
+	background: url(../img/arrow2.png) no-repeat -4px 0;
 	width: 243px;
 }
 
-*/
+/*третий этаж*/
 
+.footer {
+	background: #EBE3D8;
+	min-height: 900px;
+	position: relative;
+}
 
+.footer::after {
+	content: "";
+	width: 73px;
+	height: 900px;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 388px;
+	z-index: 1;
+}
 
+.footer__image {
+	background: url(../img/item_3.png) no-repeat;
+	position: absolute;
+	width: 827px;
+	height: 621px;
+	top: 139px;
+	left: 88px;
+	z-index: 10;
+	box-shadow: 0 120px 60px -100px rgba(0, 0, 0, 0.2);
+}
 
+.footer__section-card {
+	background: #FAE8E4;
+	width: 475px;
+	height: 351px;
+	position: absolute;
+	top: 255px;
+	right: 148px;
+	z-index: 20;
+}
 
+.footer-card__wrap {
+	margin: 34px 53px 45px 47px;
+}
+
+.footer__section-card .section-card__title {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+.footer__section-card .section-card__subtitle {
+	margin-bottom: 32px;
+}
+
+.footer__section-card .section-card__text {
+	margin-left: 3px;
+	height: 100px;
+	margin-bottom: 18px;
+}
+
+.footer__section-card .buy__button,
+.footer__section-card .buy__amount,
+.footer__section-card .section-card__buy input {
+	background: #FAE8E4;
+}
+
+.footer__section-card .buy__button:focus,
+.footer__section-card .buy__amount:focus,
+.footer__section-card .section-card__buy input:focus
+{
+	outline: none;
+}
+
+.footer__offers {
+	position: absolute;
+	top: 643px;
+	left: 948px;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 13px;
+	margin-top: 0;
+	z-index: 50;
+}
+
+.footer__offers .offers__link::after {
+	background: url(../img/arrow3.png) no-repeat -4px 0;
+	width: 110px;
+}
+
+.footer__copyright {
+	position: absolute;
+	bottom: 10px;
+	right: 32px;
+}
+
+.footer__copyright p {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-right: 86px;
+}
+
+.copyright__link {
+	position: absolute;
+	bottom: 2px;
+	right: -10px;
+}
+
+/*адаптив под мобильные*/
 
 @media only screen and (max-width: 768px) {
 	.wrap {
@@ -415,6 +534,8 @@ button.scroll__button:before {
 		margin: 0;
 		overflow: hidden;
 	}
+	
+	/*первый этаж*/
 	
 	.header {
 		min-height: 597px;
@@ -510,4 +631,227 @@ button.scroll__button:before {
 		transform: rotate(-45deg);
 	}
 	
+	/*второй этаж*/
+	
+	.main {
+		max-width: 376px;
+		min-height: 596px;
+		position: relative;
+	}
+	
+	.main__image {
+		background: url(../img/item_2.png) no-repeat;
+		background-size: 224px 326px;
+		position: absolute;
+		top: -53px;
+		left: 76px;
+	}
+	
+	.main__section-card {
+		background: #fff;
+		box-shadow: 60px 90px 100px -60px rgba(0, 0, 0, 0.2);
+		height: 281px;
+		width: 320px;
+		position: absolute;
+		top: 263px;
+		right: 26px;
+	}
+	
+	.section-card__wrap {
+		width: 260px;
+		margin: 15px 28px 25px 29px;
+	}
+	
+	.section-card__title {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 20px;
+		margin-top: 20px;
+		padding-bottom: 2px;
+	}
+	
+	.section-card__subtitle {
+		color: rgba(0, 0, 0, .5);
+		font-size: 10px;
+		font-weight: 700;
+		letter-spacing: 0.07em;
+		line-height: 10px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		margin-left: 1px;
+	}
+	
+	.section-card__text {
+		color: rgba(0, 0, 0, .5);
+		font-size: 9px;
+		font-weight: 400;
+		line-height: 13px;
+		margin-bottom: 9px;
+		margin-left: 1px;
+		width: 252px;
+	}
+	
+	.section-card__select {
+		float: left;
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 60px;
+	}
+	
+	.select__item {
+		border-radius: 50%;
+		display: inline-block;
+		height: 23px;
+		width: 23px;
+		vertical-align: top;
+		margin-bottom: 31px;
+	}
+	
+	.select__item:first-child {
+		background: #DEDEDE;
+		margin-right: 5px;
+	}
+	
+	.select__item.active {
+		background: #F29F9F;
+		height: 29px;
+		width: 29px;
+		margin-right: 6px;
+		margin-top: -2px;
+	}
+	
+	.select__item:nth-child(3) {
+		background: #A8BFF9;
+		margin-right: 5px;
+	}
+	
+	.select__item:last-child {
+		background: #90BD8F;
+	}
+	
+	.section-card__price {
+		float: left;
+		margin: 0;
+		margin-top: 8px;
+	}
+	
+	.price__item {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+
+	.buy__button {
+		display: inline-block;
+		padding: 8px 47px 10px 46px;
+	}
+	
+	.buy__button a {
+		color: #000;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 0;
+		text-decoration: none;
+	}
+	
+	.section-card__buy {
+		display: none;
+	}
+	
+	/*третий этаж*/
+	
+	.footer {
+		max-width: 376px;
+		min-height: 596px;
+		position: relative;
+	}
+	
+	.footer::after {
+		content: "";
+		width: 41px;
+		height: 596px;
+		background: #000;
+		position: absolute;
+		top: 0;
+		left: 102px;
+		z-index: 1;
+	}
+	
+	.footer__image {
+		background: url(../img/item_3.png) no-repeat;
+		position: absolute;
+		background-size: 351px 261px;
+		top: 34px;
+		left: 12px;
+		z-index: 10;
+		box-shadow: -10px 0 6px rgba(0, 0, 0, 0.2) /*ПАМАГИТИ*/
+	}
+	
+	.footer__section-card {
+		width: 305px;
+		height: 195px;
+		position: absolute;
+		top: 274px;
+		left: 44px;
+		z-index: 20;
+	}
+	
+	.footer-card__wrap {
+		margin: 21px 21px 28px 24px;
+	}
+	
+	
+	.footer__section-card .section-card__title {
+		padding-bottom: 5px;
+	}
+	
+	.footer__section-card .section-card__subtitle {
+		margin-left: 1px;
+		margin-bottom: 11px;
+	}
+	
+	.footer__section-card .section-card__text {
+		margin-left: -1px;
+		height: 30px;
+		width: 228px;
+		margin-bottom: 28px;
+	}
+	
+	.footer__section-card .buy__button {
+		font-weight: 500;
+		line-height: 0;
+		font-size: 13px;
+		padding: 17px 47px 17px 46px;
+	}
+	
+	.footer__offers {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.footer__offers .offers__link {
+		position: absolute;
+		left: 188px;
+		top: 506px;
+		width: 140px;
+		height: 40px;
+		z-index: 50;
+		background-color: #F29F9F;
+		font-size: 15px;
+	}
+	
+	.footer__offers .offers__link::after {
+		background: url(../img/arrow3.png) no-repeat;
+		background-size: 135px 12px;
+		width: 100%;
+		position: absolute;
+		top: 42px;
+		left: 2px;
+		margin: 0;
+	}
+	
+	.footer__copyright {
+		display: none;
+	}
 }
