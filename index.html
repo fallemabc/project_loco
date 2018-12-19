@@ -11,18 +11,16 @@
 <body>
 <div class="wrap">
 	<header class="header">
-		<div class="header__image">
-			<img class="image__item" src="img/image_1.png" width="549" height="562" alt="Одежда loco">
-		</div>
+		<div class="header__image"></div>
 		<div class="left-block header__left-block">
 			<div class="left-block__logo">
-				<object type="image/svg+xml" data="img/LOCO.svg" width="98" height="37" title="Логотип"></object>
+				<div class="logo__image"></div>
 			</div>
 			<div class="left-block__dropdown">
 				<span class="dropdown__item">RU</span>
-				<span class="dropdown__icon icon__arrow">
+				<span class="dropdown__icon">
 					<object type="image/svg+xml" data="img/arrow.svg" width="11" height="5.5" title="Стрелка"></object>
-				</span>
+</span>
 			</div>
 			<div class="left-block__social">
 				<a href="#" class="social__link" title="Наш аккаунт в инстаграме">
@@ -47,8 +45,9 @@
 				</nav>
 			</div>
 			<section class="header__section">
-				<h1 class="header__title section__title">Новая коллекция</h1>
-				<p class="section__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до
+				<h1 class="header__title">Новая коллекция</h1>
+				<p class="section__text">Бесплатная доставка включена. Предложение действует <br> на сайте loco.com и в
+					магазинах до
 					18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение
 					не суммируется с другими акциями, предложениями и распродажей</p>
 				<button class="section__button">читать дальше</button>
@@ -57,14 +56,12 @@
 				</div>
 			</section>
 			<div class="right-block__scroll">
-				<span class="scroll__icon"></span>
+				<button class="scroll__button"></button>
 			</div>
 		</div>
 	</header>
 	<main class="main">
-		<div class="main__image">
-			<img class="image__item" src="#" alt="Кожаный клатч">
-		</div>
+		<div class="main__image"></div>
 		<section class="main__section-card">
 			<div class="section-card__wrap">
 				<h2 class="section-card__title">Кожаный клатч</h2>
@@ -74,7 +71,7 @@
 					предложение не суммируется с другими акциями, предложениями и распродажей.</p>
 				<div class="section-card__select">
 					<span class="select__item"></span>
-					<span class="select__item select__item-active"></span>
+					<span class="select__item active"></span>
 					<span class="select__item"></span>
 					<span class="select__item"></span>
 				</div>
@@ -82,52 +79,46 @@
 					<span class="price__item">1990₽</span>
 				</div>
 				<div class="section-card__buy">
-					<div class="buy__amount">
-						<span class="amount__minus">-</span>
-						<span class="amount__count">1</span>
-						<span class="amount__plus">+</span>
-					</div>
-					<div class="buy__button">
-						<a href="#">Добавить в корзину</a>
-					</div>
+					<button class="buy__amount minus" type="button">-</button>
+					<input type="text" name="amount" id="amount_main" value="1">
+					<button class="buy__amount plus" type="button" >+</button>
+				</div>
+				<div class="buy__button">
+					<a href="#">Добавить в корзину</a>
 				</div>
 			</div>
-		</section>
-		<div class="main__offers">
-			<a class="offers__link" href="#">Другие товары на loco.com</a>
-		</div>
-	</main>
-	<footer class="footer">
-		<div class="footer__image">
-			<img class="image__item" src="#" alt="Комплект одежды">
-		</div>
-		<section class="footer__section-card">
-			<div class="footer-card__wrap">
-				<h2 class="section-card__title">Serene Total Look</h2>
-				<h3 class="section-card__subtitle">Осенняя коллекция</h3>
-				<p class="section-card__text">Джинсы, свитер, обувь. В комплект также входит пакет ароматного чая и кружка.</p>
-				<div class="section-card__buy">
-					<div class="buy__amount">
-						<span class="amount__minus">-</span>
-						<span class="amount__count">1</span>
-						<span class="amount__plus">+</span>
-					</div>
-					<div class="buy__button">
-						<a class="button__link" href="#">Добавить в корзину</a>
-					</div>
-				</div>
+</section>
+<div class="main__offers">
+	<a class="offers__link" href="#">Другие товары на loco.com</a>
+</div>
+</main>
+<footer class="footer">
+	<div class="footer__image"></div>
+	<section class="footer__section-card">
+		<div class="footer-card__wrap">
+			<h2 class="section-card__title">Serene Total Look</h2>
+			<h3 class="section-card__subtitle">Осенняя коллекция</h3>
+			<p class="section-card__text">Джинсы, свитер, обувь. <br> В комплект также входит пакет ароматного чая и кружка.</p>
+			<div class="section-card__buy">
+				<button class="buy__amount minus" type="button">-</button>
+				<input type="text" name="amount" id="amount_footer" value="1">
+				<button class="buy__amount plus" type="button" >+</button>
 			</div>
-		</section>
-		<div class="footer__offers">
-			<a class="offers__link" href="#">Другие товары на loco.com</a>
+				<div class="buy__button">
+					<a class="button__link" href="#">Добавить в корзину</a>
+				</div>
 		</div>
-		<section class="footer__copyright">
-			<p>Разработано в</p>
-			<a class="copyright__link" href="http://webheroschool.ru/">
-				<object type="image/svg+xml" data="img/WHS-logo.svg" width="82" height="22"></object>
-			</a>
-		</section>
-	</footer>
+	</section>
+	<div class="footer__offers">
+		<a class="offers__link" href="#">Другие товары на loco.com</a>
+	</div>
+	<section class="footer__copyright">
+		<p>Разработано в</p>
+		<a class="copyright__link" href="http://webheroschool.ru/">
+			<object type="image/svg+xml" data="img/WHS-logo.svg" width="82" height="22"></object>
+		</a>
+	</section>
+</footer>
 </div>
 </body>
 </html>
